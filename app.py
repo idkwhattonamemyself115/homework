@@ -36,4 +36,4 @@ def get_joke(n):
         joke_list.append(random.choice(jokes))
     return jsonify(joke_list)
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, threaded=True)
